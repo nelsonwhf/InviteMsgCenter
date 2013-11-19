@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>InviteMsgCenter</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/gamebox_msgcener</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+
+	<context-param>
+		<param-name>notifyQueue</param-name>
+		<!-- <param-value>fancy-center</param-value> -->
+		<param-value>Q001</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>serverIpAndPort</param-name>
+		<!-- <param-value>183.61.12.145:7580</param-value> -->
+		<param-value>172.19.51.151:8080</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>logQueue</param-name>
+		<param-value>Q01</param-value>
+	</context-param>
+
+	
+<!-- 
+	<context-param>
+		<param-name>inviteLimit</param-name>
+		<param-value></param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>redisHost</param-name>
+		<param-value>183.61.12.145</param-value>
+	</context-param>
+	<context-param>
+		<param-name>redisPort</param-name>
+		<param-value>6379</param-value>
+	</context-param>
+	<context-param>
+		<param-name>redisDb</param-name>
+		<param-value>0</param-value>
+	</context-param>
+	<context-param>
+		<param-name>redisPassword</param-name>
+		<param-value/>
+	</context-param>
+	<context-param>
+		<param-name>redisTimeout</param-name>
+		<param-value>5000</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>teamTimeout</param-name>
+		<param-value>600</param-value>
+	</context-param>
+
+
+	<context-param>
+		<param-name>udbServerHost</param-name>
+		<param-value>183.61.2.139,113.106.100.8</param-value>
+	</context-param>
+	<context-param>
+		<param-name>udbServerPort</param-name>
+		<param-value>8195,8195</param-value>
+	</context-param>
+-->	
+	<context-param>
+		<param-name>webdbServerHost</param-name>
+		<param-value>183.61.2.139,113.106.100.8</param-value>
+	</context-param>
+	<context-param>
+		<param-name>webdbServerPort</param-name>
+		<param-value>8090,8090</param-value>
+	</context-param>
+
+</web-app>

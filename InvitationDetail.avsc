@@ -1,0 +1,18 @@
+{
+ "namespace":"com.duowan.gamebox.msgcenter.serialize.util",
+ "name":"InvitationDetailAvro",
+ "type":"record",
+ "fields":[
+   {"name":"serverUrl","type":["string","null"]},
+   {"name":"inviteId","type":"string"},
+   {"name":"toUserId","type":["string","null"]},
+   {"name":"toUserType","type":["string","null"]},
+   {"name":"toDisplayName","type":["string","null"]},
+   {"name":"replyTimestamp","type":["long","null"]},
+   {"name":"replyTag","type":["int","null"]},
+   {"name":"notifyReplyTimestamp","type":["long","null"]},
+   {"name":"notifyReplyTag","type":["int","null"]},
+   {"name":"replyExtra","type":["string","null"]},
+   {"name":"toTimestamp","type":["long","null"]},
+   {"name":"toTag","type":["int","null"]}]
+}
